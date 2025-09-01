@@ -1,5 +1,5 @@
-import {INestApplication} from "@nestjs/common";
+import { INestApplication } from '@nestjs/common';
 
 export class Globals {
-	static nestApp: INestApplication
+  static nestApp: INestApplication;
 }

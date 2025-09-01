@@ -5,12 +5,12 @@ import * as http from 'http';
 
 import { AppModule } from './app.module';
 import { GameService } from './game.service';
-import { MainRoom } from './rooms/main.room';
+import { BaseRoom } from './rooms/base.room';
 import { Globals } from './utils/globals';
 
 const PORT = parseInt(process.argv[2]) || parseInt(process.env.PORT) || 3000;
 
-const ROOMS = [MainRoom];
+const ROOMS = [BaseRoom];
 
 async function bootstrap(port: number) {
   const app = express();
